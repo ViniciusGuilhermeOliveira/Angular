@@ -11,3 +11,13 @@ let favoriteDroid // any declaration
 favoriteDroid = "R2D2"
 favoriteDroid = 10
 console.log("My favorite Droid is " + favoriteDroid)
+
+//Funções:
+let isEnoughToBeatMF = function (parsecs: number):boolean {
+    return parsecs < 12;
+}
+
+let distance = 14
+
+console.log(`Is ${distance} parsecs enough to beat Millennium Falcon? ${isEnoughToBeatMF(distance) ? 'YES' : 'NO' }`)
+

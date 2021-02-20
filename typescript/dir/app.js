@@ -9,3 +9,9 @@ var favoriteDroid; // any declaration
 favoriteDroid = "R2D2";
 favoriteDroid = 10;
 console.log("My favorite Droid is " + favoriteDroid);
+//Funções:
+var isEnoughToBeatMF = function (parsecs) {
+    return parsecs < 12;
+};
+var distance = 14;
+console.log("Is " + distance + " parsecs enough to beat Millennium Falcon? " + (isEnoughToBeatMF(distance) ? 'YES' : 'NO'));
