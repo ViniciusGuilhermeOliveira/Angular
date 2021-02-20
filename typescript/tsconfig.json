@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "dir"
+        "outDir": "dir",
+        "noEmitOnError": true
     }
 }
