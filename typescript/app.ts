@@ -5,3 +5,9 @@ let episode: number = 4
 console.log ("This episode is "+ episode)
 episode += 1 
 console.log ("the next episode is "+ episode)
+
+let favoriteDroid // any declaration 
+// declaração do tipo any recebe qualquer tipo de resultado
+favoriteDroid = "R2D2"
+favoriteDroid = 10
+console.log("My favorite Droid is " + favoriteDroid)
