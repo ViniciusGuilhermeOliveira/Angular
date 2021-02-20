@@ -17,7 +17,13 @@ let isEnoughToBeatMF = function (parsecs: number):boolean {
     return parsecs < 12;
 }
 
-let distance = 14
+let distance = 11
 // chamada da Função utilizando tamplate String, utilizando o caracter "`" na chamda da string pode passar as funões dentro da string 
 // iif no type script tem a syntax ${condição ? true parte : false parte}
 console.log(`Is ${distance} parsecs enough to beat Millennium Falcon? ${isEnoughToBeatMF(distance) ? 'YES' : 'NO' }`)
+
+// arrow function, esse tipo de função é uma versão simplificada da função normal
+// syntax  nome da função = parametros => implementação da função 
+let call = (name: string) => console.log(`Do you copy, ${name} ?`)
+// chamada da Arrow Function
+call ("R2D2")
