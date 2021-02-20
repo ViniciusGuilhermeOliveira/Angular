@@ -27,3 +27,14 @@ console.log(`Is ${distance} parsecs enough to beat Millennium Falcon? ${isEnough
 let call = (name: string) => console.log(`Do you copy, ${name} ?`)
 // chamada da Arrow Function
 call ("R2D2")
+
+
+
+// tipos de parametros em funções 
+
+function inc (speed: number , inc: number = 1) : number {
+    return speed + inc
+}
+
+console.log(`inc (5,1) = ${inc(5,1)}`)
+console.log(`inc(5) = ${inc(5)}`)
