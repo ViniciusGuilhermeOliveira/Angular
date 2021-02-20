@@ -23,9 +23,23 @@ var call = function (name) { return console.log("Do you copy, " + name + " ?"); 
 // chamada da Arrow Function
 call("R2D2");
 // tipos de parametros em funções 
-function inc(speed, inc) {
+function inc3(speed, inc) {
     if (inc === void 0) { inc = 1; }
     return speed + inc;
 }
-console.log("inc (5,1) = " + inc(5, 1));
-console.log("inc(5) = " + inc(5));
+console.log("inc (5,1) = " + inc3(5, 1));
+console.log("inc(5) = " + inc3(5));
+function defineNumber() {
+    return 5;
+}
+/* atribuindo o valor default como o retorno de uma função,
+a função defineNumber retorna o valor 5 que é passado para a função
+inc3 que devolve o valor somado ao incremento e então passa esse valor c
+omo default para o parametro inc da função inc2
+*/
+function inc2(speed, inc) {
+    if (inc === void 0) { inc = inc3(defineNumber(), defineNumber()); }
+    return speed + inc;
+}
+console.log("inc2 (5,1) = " + inc2(5, 1));
+console.log("inc2(5) = " + inc2(5));

@@ -32,9 +32,26 @@ call ("R2D2")
 
 // tipos de parametros em funções 
 
-function inc (speed: number , inc: number = 1) : number {
+function inc3 (speed: number , inc: number = 1) : number {
     return speed + inc
 }
 
-console.log(`inc (5,1) = ${inc(5,1)}`)
-console.log(`inc(5) = ${inc(5)}`)
+console.log(`inc (5,1) = ${inc3(5,1)}`)
+console.log(`inc(5) = ${inc3(5)}`)
+
+function defineNumber ():number{
+    return 5
+}
+
+
+/* atribuindo o valor default como o retorno de uma função, 
+a função defineNumber retorna o valor 5 que é passado para a função 
+inc3 que devolve o valor somado ao incremento e então passa esse valor c
+omo default para o parametro inc da função inc2
+*/
+function inc2 (speed: number , inc: number = inc3(defineNumber(),defineNumber())) : number {
+    return speed + inc
+}
+
+console.log(`inc2 (5,1) = ${inc2(5,1)}`)
+console.log(`inc2(5) = ${inc2(5)}`)
