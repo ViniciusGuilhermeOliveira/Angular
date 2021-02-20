@@ -1,1 +1,2 @@
-let message:string
+let message:string = "Hello Word!"
+console.log(message)
