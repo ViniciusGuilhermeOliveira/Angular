@@ -18,6 +18,6 @@ let isEnoughToBeatMF = function (parsecs: number):boolean {
 }
 
 let distance = 14
-
+// chamada da Função utilizando tamplate String, utilizando o caracter "`" na chamda da string pode passar as funões dentro da string 
+// iif no type script tem a syntax ${condição ? true parte : false parte}
 console.log(`Is ${distance} parsecs enough to beat Millennium Falcon? ${isEnoughToBeatMF(distance) ? 'YES' : 'NO' }`)
-
