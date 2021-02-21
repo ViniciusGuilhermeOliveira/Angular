@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "outDir": "dir",
+        "noEmitOnError": true
+    }
+}
