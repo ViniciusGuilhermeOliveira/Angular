@@ -1,11 +1,3 @@
-class Spacecraft {
-    constructor(public propulsor: string){}
-
-    jumpIntoHyperSpace(){
-        console.log(`Entering hyperspace with ${this.propulsor}`)
-    }
-}
-
 let ship = new Spacecraft('hyperdrive')
 ship.jumpIntoHyperSpace()
 
@@ -27,9 +19,7 @@ class MillenniumFalcon extends Spacecraft{
 let falcon = new MillenniumFalcon()
 falcon.jumpIntoHyperSpace()
 
-interface Containership{
-    cargoContainers: number
-}
+
 
 class MillenniumFalconDois extends Spacecraft implements Containership{
 
