@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
         "outDir": "dir",
-        "noEmitOnError": true
+        "noEmitOnError": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ]
     }
 }
